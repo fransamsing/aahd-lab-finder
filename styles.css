@@ -1,0 +1,9 @@
+/* Custom styles — tweak freely */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+figure img {
+  border-radius: 8px;
+}
