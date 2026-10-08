@@ -1,0 +1,31 @@
+---
+title: "Welcome"
+toc: false
+---
+
+A directory of Australian laboratories and service providers for
+**environmental toxin testing** (PFAS, pesticides, metals and more) and
+**aquatic animal infectious disease diagnostics**.
+
+::: {.callout-tip appearance="simple"}
+## [Find a lab or service →](map.qmd)
+Search the interactive map by toxin, pathogen, service, state or sector.
+:::
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+suppressPackageStartupMessages(library(plotly))
+d <- read.csv("data/service_providers.csv", check.names = FALSE)
+area <- ifelse(grepl(",", d$Tab), "Both", d$Tab)
+counts <- as.data.frame(table(State = d$State, Area = area))
+plot_ly(counts, x = ~State, y = ~Freq, color = ~Area, type = "bar",
+        colors = c(Both = "#6a4c93", Environmental = "#2a9d8f",
+                   `Infectious disease` = "#e76f51")) |>
+  layout(barmode = "stack", title = "Providers by state",
+         yaxis = list(title = "Providers"), xaxis = list(title = ""),
+         legend = list(orientation = "h"))
+```
+
+Read more [about this project](https://www.frdc.com.au/project/2023-006){target="_blank"}.

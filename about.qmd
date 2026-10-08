@@ -1,0 +1,25 @@
+---
+title: "About"
+toc: false
+---
+
+This directory maps Australian laboratories and service providers that offer
+**environmental toxin testing** (such as PFAS, pesticides and metals) and
+**aquatic animal infectious disease diagnostics** (such as molecular diagnostics,
+histopathology and virology).
+
+It was developed as part of the Fisheries Research and Development Corporation (FRDC)
+project
+[2023-006: Future needs of Australia's aquatic animal disease diagnostic system](https://www.frdc.com.au/project/2023-006){target="_blank"}.
+
+## Using the directory
+
+Go to [Find a lab](map.qmd) to search by toxin, pathogen, service, state or sector.
+Click a marker on the map or a name in the results table to see each provider's
+tests, services and website.
+
+## Disclaimer
+
+Listings are compiled from publicly available information and are provided as a guide only.
+Inclusion does not imply endorsement. Please contact providers directly to confirm
+current services, accreditation and availability.

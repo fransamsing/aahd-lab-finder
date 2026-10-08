@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - shinylive-sw.js
+
+filters:
+  - shinylive
+
+website:
+  title: "Aquatic Animal Health Lab Finder"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: map.qmd
+        text: Find a lab
+      - href: about.qmd
+        text: About
+  page-footer:
+    center: "FRDC Project 2023-006: Future needs of Australia's aquatic animal disease diagnostic system"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto
+  warning: false
+  message: false
